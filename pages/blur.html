@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="blur img free, online image blurrer, photo editor tool" />
+  <meta name="description" content="Use our free Blur Image Tool to instantly blur parts of your photo online with adjustable strength." />
+  <title>Blur Image Tool | Spiral tool</title>
+  <link rel="stylesheet" href="../style/blur.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-brand">Spiral tool</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Photo Editor ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="blur.html">Blur Tool</a></li>
+          <li><a href="convert.html">Image Converter</a></li>
+          <li><a href="opacity.html">Opacity Editor</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Description Header -->
+  <header class="hero">
+    <h1>Blur Image Tool</h1>
+    <p>Blur any image instantly using our <strong>blur img free</strong> tool. Ideal for privacy, focus, and effects.</p>
+    <a href="#tool" class="tool-btn">Start Blurring</a>
+  </header>
+
+  <!-- Tool Section -->
+  <main class="content" id="tool">
+    <section class="tool-container">
+      <h2>Upload and Blur Your Image</h2>
+      <input type="file" id="imageUpload" accept="image/*" />
+      <div class="img-preview-box">
+        <img id="previewImg" src="" alt="Preview" />
+      </div>
+      <label for="blurRange">Blur Level: <span id="blurValue">0</span>px</label>
+      <input type="range" id="blurRange" min="0" max="10" value="0" />
+      <button id="downloadBtn" class="tool-btn">Download Blurred Image</button>
+      <canvas id="canvas" style="display:none;"></canvas>
+    </section>
+  </main>
+  <!-- Blur Tool Description Section -->
+<section class="content">
+  <div class="tool-container">
+    <h2>About Blur Image Tool</h2>
+    <p><strong>Blur Image Tool</strong> lets you quickly add blur to any image right in your browser — no uploads, no sign-ups, no downloads required.</p>
+    <p>Perfect for creating background effects, privacy edits, thumbnails, or social media graphics with smooth blur control. Just upload, adjust the slider, and save.</p>
+
+    <h3>Why Use Our Tool?</h3>
+    <ul>
+      <li> 100% browser-based — your files stay private</li>
+      <li> Blur intensity control with real-time preview</li>
+      <li> Works with JPG, PNG, JPEG, WebP and more</li>
+      <li> Free, fast, secure and mobile-friendly</li>
+    </ul>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Spiral tool free. All rights reserved.</p>
+  </footer>
+
+  <script src="../src/blur.js"></script>
+
+</body>
+</html>

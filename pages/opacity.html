@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="image opacity editor, decrease image transparency, photo editor opacity" />
+  <meta name="description" content="Easily adjust the opacity of any image with our free online opacity editor. No login needed, fast & secure!" />
+  <title>Image Opacity Editor | Spiral tool</title>
+  <link rel="stylesheet" href="../style/opacity.css" />
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="nav-brand">Spiral tool</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Photo Editor ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="blur.html">Blur Tool</a></li>
+          <li><a href="convert.html">Image Converter</a></li>
+          <li><a href="opacity.html">Opacity Editor</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Description Header -->
+ <header class="tool-header">
+  <h1>Free Online Opacity Editor – Adjust Image Transparency Easily</h1>
+  <a href="#opacity-tool" class="tool-btn">Start Editing Opacity</a>
+</header>
+  <!-- Opacity Tool Section -->
+<section id="opacity-tool" class="tool-section">
+  <div class="tool-box">
+    <h2>Edit Image Opacity</h2> <!-- moved here -->
+    <input type="file" id="opacityUpload" accept="image/*" />
+    <br />
+    <img id="opacityPreview" src="" alt="Opacity Preview" class="preview-img" />
+    <br />
+    <label for="opacityRange">Opacity: <span id="opacityValue">100</span>%</label>
+    <input type="range" id="opacityRange" min="0" max="100" value="100" />
+    <br />
+    <button id="opacityDownload" class="download-btn">Download Transparent Image</button>
+    <canvas id="opacityCanvas" style="display: none;"></canvas>
+  </div>
+</section>
+<!-- Tool Info Section -->
+<section class="tool-info">
+  <h3>Why Use Our Online Opacity Editor?</h3>
+  <p>
+    Want to control how visible an image is for overlays, watermarking, or design?
+    Our <strong>opacity editor</strong> lets you reduce image transparency instantly — no software, no sign-up.
+  </p>
+  <p>
+    Whether you're a designer, student, or content creator, simply upload your image,
+    slide to set opacity, and download — all safely in your browser. Fast, secure, and mobile-friendly!
+  </p>
+  <ul class="info-features">
+    <li> Adjust transparency from <strong>0% to 100%</strong> instantly</li>
+    <li> Supports <strong>PNG, JPG, JPEG, WebP</strong>, and more</li>
+    <li> Perfect for overlays, presentations, and social media</li>
+    <li> 100% <strong>secure</strong> — no uploads, no data collection</li>
+  </ul>
+</section>
+  <footer>
+    <p>&copy; 2025 Spiral tool. All rights reserved.</p>
+  </footer>
+
+  <script src="../src/opacity.js"></script>
+</body>
+</html>
