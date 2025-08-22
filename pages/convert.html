@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spiral Img Converter - Convert PNG to JPG, JPEG, PDF, BMP, ICO</title>
-  <meta name="description" content="Convert multiple images (PNG, JPG, JPEG, BMP, ICO) to PDF or any image format. Free, fast, browser-based image converter. No install required.">
-  <meta name="keywords" content="image converter, convert png to jpg, png to pdf, jpeg to bmp, image to pdf, batch image converter, online image tool, spiral, img, pdf, word, bmp, convertor">
-  <meta name="author" content="Asaad Shakeel">
+  <title>Image Format Converter - Convert Image File Format to JPG, PNG, PDF</title>
+  <meta name="description" content="Free online image format converter to quickly convert image file format to JPG, PNG, PDF, BMP or ICO. Convert images securely in your browser without uploading.">
+  <meta name="keywords" content="image format converter, convert image file format, convert image to png format, convert image to jpg, png to pdf, jpeg to bmp, batch image converter, online image tool, spiral img converter">
+  <meta name="author" content="Spiral Tool">
 
-  <!-- Link to your existing blue-theme CSS -->
+  <!-- ✅ Open Graph (Facebook, LinkedIn, WhatsApp) -->
+  <meta property="og:title" content="Image Format Converter - Free Online Tool">
+  <meta property="og:description" content="Easily convert image file format: PNG, JPG, JPEG, BMP, ICO or merge into PDF. 100% browser-based, fast and secure.">
+  <meta property="og:image" content="https://saifali2892.github.io/spiral-image-editor/images/convert.png">
+  <meta property="og:url" content="https://saifali2892.github.io/spiral-image-editor/pages/convert.html">
+  <meta property="og:type" content="Spiral Tool">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Image Format Converter - Free Online Tool">
+  <meta name="twitter:description" content="Convert image to JPG, PNG, PDF and more formats quickly and securely in your browser.">
+  <meta name="twitter:image" content="https://saifali2892.github.io/spiral-image-editor/images/convert.png">
+
+  <!-- Bootstrap CSS for styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main CSS -->
   <link rel="stylesheet" href="../style/convert.css" />
+  <!-- Mobile Navigation CSS -->
+  <link rel="stylesheet" href="../style/convertmob.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
@@ -18,8 +38,15 @@
   <!-- Navigation -->
   <nav>
     <div class="nav-brand">Spiral Tools</div>
-    <div class="nav-toggle" id="navToggle">☰</div>
-    <ul class="nav-links">
+    
+    <!-- Mobile Icon - Removed inline onclick handlers -->
+    <div id="convert-mobile-icon" class="mobile-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="convert-nav-links">
       <li><a href="../index.html">Home</a></li>
       <li class="dropdown">
         <a href="#">Photo Editor ▾</a>
@@ -27,6 +54,7 @@
           <li><a href="blur.html">Blur Tool</a></li>
           <li><a href="convert.html">Format Converter</a></li>
           <li><a href="opacity.html">Opacity Editor</a></li>
+          <li><a href="bg.html">BG remover</a></li>
         </ul>
       </li>
     </ul>
@@ -35,7 +63,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <h1>Image Format Converter</h1>
-    <p>Convert multiple images into JPG, JPEG, BMP, ICO or a single PDF — securely and instantly in your browser.</p>
+    <p>Use our free <strong>image format converter</strong> to quickly <em>convert image file format</em> into different types. You can <em>convert image to JPG</em>, <em>convert image to PNG format</em>, or even merge multiple pictures into a single <em>PDF</em> file — all instantly in your browser without uploading.</p>
   </section>
 
   <!-- Main Tool Interface -->
@@ -48,6 +76,7 @@
       <select id="formatSelect">
         <option value="jpg">JPG</option>
         <option value="jpeg">JPEG</option>
+        <option value="png">PNG</option>
         <option value="bmp">BMP</option>
         <option value="ico">ICO</option>
         <option value="pdf">PDF</option>
@@ -67,27 +96,73 @@
   <!-- About Section -->
   <section class="content">
     <div class="tool-container">
-      <h2>About Multi Image Converter</h2>
-      <p><strong>Multi Image Converter</strong> is a free, easy-to-use tool to convert PNG, JPG, JPEG, BMP, or ICO into one format or a single PDF.</p>
-      <p>This works 100% in your browser. Your files are not uploaded anywhere. Just choose images, select the format, and convert.</p>
-      <p>Perfect for students, designers, developers, and professionals. Fast, free, mobile-friendly — no login required.</p>
+      <h2>About Our Image Format Converter</h2>
+      <p><strong>Spiral Image Format Converter</strong> is a free, easy-to-use tool to <em>convert image file format</em> such as PNG, JPG, JPEG, BMP, or ICO into one format or merge them into a single PDF.</p>
+      <p>You can also <em>convert image to PNG format</em> or <em>convert image to JPG</em> without installing software. Everything works 100% in your browser — your files are not uploaded anywhere.</p>
+      <p>Perfect for students, designers, developers, and professionals. Fast, secure, mobile-friendly, and completely free.</p>
 
-      <h3>Supported Formats:</h3>
+      <h3>Supported Conversions:</h3>
       <ul>
-        <li>PNG to JPG, JPEG, BMP, ICO, PDF</li>
-        <li>JPG to PNG, JPEG, BMP, ICO, PDF</li>
-        <li>Multiple images into one PDF</li>
+        <li>Convert image to JPG, JPEG, BMP, ICO, PDF</li>
+        <li>Convert image to PNG format instantly</li>
+        <li>Merge multiple images into one PDF file</li>
       </ul>
     </div>
+  </section>
+  
+  <section class="internal">
+    <p>For more precise <a href="edit image.html">Editing</a> , you can also try our 
+<a href="blur.html">blur tool</a> which lets you adjust image Blurness online.</p>
   </section>
 
   <!-- Hidden Canvas -->
   <canvas id="canvas" style="display:none;"></canvas>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Spiral Tools. All rights reserved.
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- About Us -->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="term.html">Terms of Service</a></li>
+          <li><a href="example.html">Examples</li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="story.html">Email Support</a></li>
+          <li><a href="FAQS.html">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="footer-column">
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="blur.html">Blur Tool</a></li>
+          <li><a href="convert.html">Convert Tool</a></li>
+          <li><a href="opacity.html">Opacity Tool</a></li>
+          <li><a href="bg.html">BG Remover</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Spiral tool. All rights reserved.
+    </div>
   </footer>
-  <script src="../src/converter.js" defer></script>
+
+  <!-- Load JavaScript files in correct order -->
+  <script src="../src/converter.js"></script>
+  <!-- Mobile Navigation JavaScript -->
+  <script src="../src/convertmob.js"></script>
+
 </body>
 </html>
