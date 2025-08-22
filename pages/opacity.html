@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="image opacity editor, decrease image transparency, photo editor opacity" />
   <meta name="description" content="Easily adjust the opacity of any image with our free online opacity editor. No login needed, fast & secure!" />
   <title>Image Opacity Editor | Spiral tool</title>
+   <!-- Open Graph (Social Sharing) -->
+  <meta property="og:title" content="Image Opacity Editor | Spiral tool" />
+  <meta property="og:description" content="Easily adjust the opacity of any image with our free online opacity editor. No login needed, fast & secure!" />
+  <meta property="og:type" content="Spiral Tool" />
+  <meta property="og:url" content="https://saifali2892.github.io/spiral-image-editor/pages/blur.html" />
+  <meta property="og:image" content="https://saifali2892.github.io/spiral-image-editor/images/opacity.png" />
   <link rel="stylesheet" href="../style/opacity.css" />
+  <!-- Mobile Navigation CSS -->
+  <link rel="stylesheet" href="../style/opacitymob.css" />
 </head>
 <body>
 
   <!-- Navigation Menu -->
   <nav>
     <div class="nav-brand">Spiral tool</div>
-    <ul class="nav-links">
+    
+    <!-- Mobile Icon -->
+    <div id="opacity-mobile-icon" class="mobile-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="opacity-nav-links">
       <li><a href="../index.html">Home</a></li>
       <li class="dropdown">
         <a href="#">Photo Editor ▾</a>
@@ -21,6 +37,7 @@
           <li><a href="blur.html">Blur Tool</a></li>
           <li><a href="convert.html">Image Converter</a></li>
           <li><a href="opacity.html">Opacity Editor</a></li>
+          <li><a href="bg.html">BG Remover</a></li>
         </ul>
       </li>
     </ul>
@@ -64,10 +81,57 @@
     <li> 100% <strong>secure</strong> — no uploads, no data collection</li>
   </ul>
 </section>
-  <footer>
-    <p>&copy; 2025 Spiral tool. All rights reserved.</p>
+ <!-- internal link -->
+  </section>
+  <section class="internal">
+    <p>For more precise <a href="edit image.html">Editing</a>, you can also try our 
+<a href="bg.html">BG Remover</a> which lets you remove BG of image (FREE) online.</p>
+
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- About Us -->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="term.html">Terms of Service</a></li>
+          <li><a href="example.html">Examples</li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="story.html">Email Support</a></li>
+          <li><a href="FAQS.html">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="footer-column">
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="blur.html">Blur Tool</a></li>
+          <li><a href="convert.html">Convert Tool</a></li>
+          <li><a href="opacity.html">Opacity Tool</a></li>
+          <li><a href="bg.html">BG Remover</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Spiral tool. All rights reserved.
+    </div>
   </footer>
 
+
   <script src="../src/opacity.js"></script>
+  <!-- Mobile Navigation JavaScript -->
+  <script src="../src/opacitymob.js"></script>
 </body>
 </html>
