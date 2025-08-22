@@ -125,19 +125,17 @@ nav {
 
 /* Features Section */
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem; /* spacing thoda kam */
+  padding: 3rem 2rem; /* thoda compact padding */
 }
 
 .feature-box {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
-  padding: 2rem;
-  width: 300px;
+  padding: 1.5rem; /* thoda kam padding */
   border-radius: 15px;
   color: #fff;
   text-align: center;
@@ -147,10 +145,11 @@ nav {
 }
 
 .feature-box:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 12px 24px rgba(0, 242, 254, 0.3);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 242, 254, 0.3);
   background: rgba(255, 255, 255, 0.15);
 }
+
 
 .feature-box h3 {
   font-size: 1.5rem;
@@ -175,4 +174,118 @@ footer {
   color: #aaa;
   font-size: 0.9rem;
   border-top: 1px solid rgba(255,255,255,0.1);
+}
+/* Why Section (Description Style) */
+.why {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+  color: #eaeaea;
+}
+
+.why h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #00f2fe;
+  font-weight: 700;
+  letter-spacing: 1px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.why p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.2rem;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.why strong {
+  color: #00f2fe;
+  font-weight: 600;
+}
+.why {
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.05), rgba(255, 255, 255, 0.02));
+}
+/*footer meanu*/
+
+
+.footer {
+  background: #0f172a; /* dark blue/black shade */
+  color: #f1f5f9;
+  padding: 10px 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #38bdf8; /* sky blue heading */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+}
+
+.footer-column ul li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #38bdf8;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #334155;
+  font-size: 14px;
+  color: #94a3b8;
+}
+/* ==== Compact Footer Override ==== */
+.footer {
+  padding: 24px 16px;
+}
+
+.footer-container {
+  gap: 16px; 
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* zyada columns fit honge */
+}
+
+.footer-column h3 {
+  font-size: 16px; 
+  margin-bottom: 8px;
+}
+
+.footer-column ul li {
+  margin: 4px 0; 
+}
+
+.footer-column ul li a {
+  font-size: 14px; 
+  line-height: 1.3;
+}
+
+.footer-bottom {
+  margin-top: 16px; 
+  padding-top: 12px;
+  font-size: 13px;
 }
