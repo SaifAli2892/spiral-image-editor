@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://saifali2892.github.io/spiral-image-editor/sitemap.xml
